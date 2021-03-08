@@ -1,0 +1,25 @@
+<div class="banner">
+    <div class="social-link">
+        <fa-icon [icon]="faFacebookF" class="faIcon"></fa-icon>
+        <fa-icon [icon]="faTwitter" class="faIcon"></fa-icon>
+        <fa-icon [icon]="faGithub" class="faIcon"></fa-icon>
+    </div>
+    <div class="banner-text">
+        <h1>Je suis Jérémie Legrand</h1>
+        <p>Développeur web full stack junior </p>
+    </div>
+    <div class="banner-btn">
+        <button class="btn btn-primary">Portfolio</button>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <p *ngFor="let p of project" >
+        {{p.name}}
+    </p>
+    <p *ngFor="let p of project" >
+        {{p.description}}
+    </p>
+</div>
